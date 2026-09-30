@@ -1,4 +1,4 @@
-# -ai-command-center-demos
+# ai-command-center-demos
 Agentic AI product prototypes for manufacturing
 # Agentic AI Command Centers for Manufacturing
 
