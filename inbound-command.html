@@ -2369,7 +2369,7 @@
       var plant = IB.helpers.getPlant(IB.STATE.currentPlant === 'ALL' ? 'P001' : IB.STATE.currentPlant);
       var center = plant ? [plant.lat, plant.lon] : [18.76, 73.86];
       IB_cmdMap = L.map(mapEl, { zoomControl: false, attributionControl: false }).setView(center, 6);
-      L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', { maxZoom: 12 }).addTo(IB_cmdMap);
+      L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png?key=cb1_45h8_1_3ec1f5565f92cdc23ab1c93b', { maxZoom: 12 }).addTo(IB_cmdMap);
       // Plant markers
       IB.DATA.plants.forEach(function(p) {
         var isActive = p.id === IB.STATE.currentPlant;
@@ -2618,7 +2618,7 @@
       if (!mapEl) return;
       if (IB_netMap) { try { IB_netMap.remove(); } catch(e){} IB_netMap = null; }
       IB_netMap = L.map(mapEl, { zoomControl: false, attributionControl: false }).setView([20.5, 78], 5);
-      L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png', { maxZoom: 12 }).addTo(IB_netMap);
+      L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png?key=cb1_45h8_1_3ec1f5565f92cdc23ab1c93b', { maxZoom: 12 }).addTo(IB_netMap);
       L.control.zoom({ position: 'bottomright' }).addTo(IB_netMap);
       setTimeout(function(){ if (IB_netMap) IB_netMap.invalidateSize(); }, 200);
     }

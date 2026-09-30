@@ -1782,7 +1782,7 @@ function renderVessel(){
       return;
     }
     const map = L.map('vesselMap', {zoomControl:true, attributionControl:false}).setView([55, 15], 4);
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {maxZoom:18}).addTo(map);
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png?key=cb1_45h8_1_3ec1f5565f92cdc23ab1c93b', {maxZoom:18}).addTo(map);
 
     const plants = [
       {name:'Vaasa HQ (Finland)', coords:[63.0951,21.6165], note:'PredMaint live - 31% adoption'},
