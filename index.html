@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agentic AI Command Centers — Harshwardhan Patil</title>
+<meta name="description" content="Three clickable agentic-AI product prototypes for manufacturing, built by Harshwardhan Patil.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400;62..125,600;62..125,800&display=swap" rel="stylesheet">
+<style>
+:root{--floor:#EDF0EE;--ink:#18212B;--steel:#56636F;--rule:#C9D0CC;--hazard:#F2B705;--panel:#FFFFFF}
+*{box-sizing:border-box;margin:0}
+body{background:var(--floor);color:var(--ink);font-family:Archivo,"Helvetica Neue",Arial,sans-serif;font-stretch:100%;line-height:1.5}
+.tape{height:14px;background:repeating-linear-gradient(-45deg,var(--hazard) 0 18px,var(--ink) 18px 36px)}
+main{max-width:880px;margin:0 auto;padding:56px 24px 72px}
+h1{font-stretch:125%;font-weight:800;font-size:clamp(2.1rem,5.5vw,3.6rem);line-height:1.02;letter-spacing:-.01em;max-width:16ch}
+.lede{margin-top:20px;max-width:60ch;font-size:1.08rem;color:var(--steel)}
+.by{margin-top:14px;font-weight:600}
+.note{margin-top:28px;padding:12px 16px;border-left:6px solid var(--hazard);background:var(--panel);max-width:62ch;font-size:.95rem}
+ul{list-style:none;padding:0;margin-top:48px;border-top:2px solid var(--ink)}
+li{display:grid;grid-template-columns:1fr auto;gap:8px 32px;padding:28px 0;border-bottom:1px solid var(--rule);align-items:start}
+h2{font-stretch:112%;font-weight:800;font-size:1.45rem}
+.ctx{color:var(--steel);font-size:.95rem;margin-top:2px}
+.what{grid-column:1;max-width:62ch;margin-top:6px}
+.stack{grid-column:1;font-size:.88rem;color:var(--steel);margin-top:4px}
+a.open{grid-column:2;grid-row:1/span 4;align-self:center;display:inline-block;padding:12px 20px;background:var(--ink);color:#fff;text-decoration:none;font-weight:600;font-stretch:112%;border:2px solid var(--ink)}
+a.open:hover{background:var(--hazard);color:var(--ink)}
+a.open:focus-visible{outline:3px solid var(--hazard);outline-offset:3px}
+footer{margin-top:40px;font-size:.9rem;color:var(--steel)}
+@media (max-width:640px){li{grid-template-columns:1fr}a.open{grid-column:1;grid-row:auto;justify-self:start;margin-top:10px}}
+</style>
+</head>
+<body>
+<div class="tape" aria-hidden="true"></div>
+<main>
+  <h1>Agentic AI command centers for manufacturing</h1>
+  <p class="lede">Three clickable product prototypes I designed during my Tech Mahindra internship (2026) to show enterprise clients how multi-agent AI would run their operations, iterated with business-unit heads until ready for client demos.</p>
+  <p class="by">Harshwardhan Patil, MBA, DoMS IIT Roorkee</p>
+  <p class="note">These are front-end prototypes. Data, model predictions and agent actions are simulated to demonstrate the product experience and decision workflow.</p>
+
+  <ul>
+    <li>
+      <h2>ScaleAI Command</h2>
+      <p class="ctx">For a Head of AI CoE at a marine-engine OEM</p>
+      <p class="what">An AI portfolio operating system that moves initiatives from pilot to P&amp;L: tracks 14 AI initiatives, flags EU AI Act risk, models inference spend, and surfaces what to scale next.</p>
+      <p class="stack">Designed AI: portfolio-monitoring agent, drift detection, compliance drafting. Built with HTML, JavaScript, Leaflet.</p>
+      <a class="open" href="scaleai-command.html">Open demo</a>
+    </li>
+    <li>
+      <h2>PredictProcure Command</h2>
+      <p class="ctx">For a plant head at an automotive plant</p>
+      <p class="what">A plant nerve center linking machine-failure prediction to spare-parts procurement, with explainable-AI reasoning, a what-if simulator and a multi-agent orchestration view.</p>
+      <p class="stack">Designed AI: predictive-maintenance ensemble, sourcing and logistics agents. Built with HTML, JavaScript, Chart.js.</p>
+      <a class="open" href="predictprocure-command.html">Open demo</a>
+    </li>
+    <li>
+      <h2>InBound Command</h2>
+      <p class="ctx">For an inbound-logistics head across three plants</p>
+      <p class="what">A supply-chain control tower that tracks shipments, ranks alerts by cost of risk, auto-heals routine exceptions and hands decisions to an AI co-pilot crew.</p>
+      <p class="stack">Designed AI: alerting and co-pilot agent crew, weather-aware route risk. Built with HTML, JavaScript, Chart.js, Leaflet.</p>
+      <a class="open" href="inbound-command.html">Open demo</a>
+    </li>
+  </ul>
+  <footer>Best viewed on a laptop or desktop screen.</footer>
+</main>
+</body>
+</html>
